@@ -1,10 +1,16 @@
 <div class="bgimg">
     <div class="middle">
-        <div class="title">
+        <div class="title-small" *ngIf="innerWidth <= fontSizeBreakPoint">
             ThijsThijssen.nl
         </div>
-        <div class="coming-soon">
-            COMING SOON
+        <div class="title-big" *ngIf="innerWidth > fontSizeBreakPoint">
+            ThijsThijssen.nl
+        </div>
+        <div class="coming-soon-small" *ngIf="innerWidth <= fontSizeBreakPoint">
+            COMING SOON ({{innerWidth}})
+        </div>
+        <div class="coming-soon-big" *ngIf="innerWidth > fontSizeBreakPoint">
+            COMING SOON ({{innerWidth}})
         </div>
         <button mat-mini-fab color="black" (click)="goToLink('https://www.linkedin.com/in/thijsthijssen/')">
             <span class="social-fab-size">

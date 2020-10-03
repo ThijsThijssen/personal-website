@@ -32,18 +32,27 @@ body, html {
 }
 
 button {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 5px;
 }
 
-.title {
+.title-small {
+    font-size: 10vw;
+    margin: 2.5vw;
+}
+
+.title-big {
     font-size: 40px;
-    margin: 20px;
+    margin: 15px;
 }
 
-.coming-soon {
-    font-size: 30px;
-    margin: 20px;
+.coming-soon-small {
+    font-size: 8vw;
+    margin: 2.5vw;
     font-style: italic;
-    
+}
+
+.coming-soon-big {
+    font-size: 30px;
+    margin: 15px;
+    font-style: italic;
 }

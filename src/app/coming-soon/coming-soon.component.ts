@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-coming-soon',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComingSoonComponent implements OnInit {
 
-  constructor() { }
+  innerWidth: any;
+  fontSizeBreakPoint;
+
+  constructor() {
+    this.fontSizeBreakPoint = 500;
+  }
 
   ngOnInit(): void {
+    this.innerWidth = window.innerWidth;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = event.target.innerWidth;
   }
 
   goToLink(url: string) {
