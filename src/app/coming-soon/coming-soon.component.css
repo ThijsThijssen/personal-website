@@ -32,8 +32,10 @@ button {
 
 .title-small {
     font-size: 10vw;
-    margin: 2.5vw;
-    padding: 5px;
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .title-big {
