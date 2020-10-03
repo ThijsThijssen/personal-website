@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-not-found',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageNotFoundComponent implements OnInit {
 
-  constructor() { }
+  innerWidth: any;
+  svgSizeBreakPoint;
 
-  ngOnInit(): void {
+  constructor(private router: Router) {
+    this.svgSizeBreakPoint = 500;
   }
 
+  ngOnInit(): void {
+    this.innerWidth = window.innerWidth;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = event.target.innerWidth;
+  }
+
+  navigateTo(path: string) {
+    this.router.navigateByUrl(path);
+  }
 }
