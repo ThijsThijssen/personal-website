@@ -1,0 +1,54 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    background-image: url('../../assets/img/coming-soon.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 100%;
+}
+
+.mat-black {
+    background-color: black;
+    color: #fff;
+}
+
+.social-fab-size {
+    font-size: 1.5em;
+}
+
+button {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.title {
+    font-size: 40px;
+    margin: 20px;
+}
+
+.coming-soon {
+    font-size: 30px;
+    margin: 20px;
+    font-style: italic;
+    
+}

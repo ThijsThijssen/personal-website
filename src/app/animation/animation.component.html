@@ -1,0 +1,6 @@
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+    <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+</div>
+<div>
+    <button mat-raised-button color="primary" (click)="toggle()">Hello</button>
+</div>
