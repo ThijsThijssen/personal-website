@@ -22,11 +22,6 @@ body, html {
     text-align: center;
 }
 
-hr {
-    margin: auto;
-    width: 100%;
-}
-
 .mat-black {
     background-color: black;
     color: #fff;
@@ -42,7 +37,7 @@ button {
 }
 
 .title {
-    font-size: 35px;
+    font-size: 40px;
     margin: 20px;
 }
 
